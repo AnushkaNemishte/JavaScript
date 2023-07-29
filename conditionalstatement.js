@@ -87,3 +87,18 @@ else{
 let isRaining = false;
 let msg = isRaining?"Dont forget your umbrella":"Enjoy the weather";
 console.log(msg);
+
+let numb1 = -5;
+let numb2 = -10;
+
+if(numb1 > 0 && numb2 > 0)
+{
+    console.log("Both are positive");
+}
+else if(numb1 > 0 || numb2 > 0)
+{
+    console.log("One of the 2 are positive number");
+}
+else {
+    console.log("Both are negative");
+}
