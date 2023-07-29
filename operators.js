@@ -32,3 +32,4 @@ let p = 6;
 let q = 3;
 console.log("Logical Add(&&) Operator", p > q && 3 < 6); //&& operator gives true only if both conditions are true
 console.log("Logical OR(||) Operator", p > q || p < q); //|| operator gives true when either 1 condition is also true
+console.log("Logical NOT(!) Operator", p != q);
