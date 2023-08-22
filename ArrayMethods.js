@@ -42,3 +42,8 @@ numbers.forEach(function(num,index,arr){
 fruits.forEach(function(item,index){
     console.log(item+ " "+ index)
 })
+
+//map
+arr.map(function(item){
+    console.log(item.name); 
+})
