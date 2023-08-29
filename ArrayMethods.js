@@ -131,3 +131,35 @@ const removeDuplicate = duplicateNum.filter((value,index,arr)=>{
     return arr.indexOf(value)===index
 })
 console.log(removeDuplicate)
+
+//filter() and map() together
+const todos = [
+    {
+        id:1,
+        text:"To do Homework",
+        isCompleted:true
+    },
+    {
+        id:2,
+        text:"To do JavaScript",
+        isCompleted:true
+    },
+    {
+        id:3,
+        text:"To go Market",
+        isCompleted:false
+    },
+    {
+        id:1,
+        text:"To do Exercise",
+        isCompleted:true
+    }
+]
+
+    const todoCompleted = todos.filter((todo)=>{
+        return todo.isCompleted === true
+    }).map((todo)=>{ //this will return only text which iscomplted is true
+        return todo.text
+    })
+
+    console.log(todoCompleted);
