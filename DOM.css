@@ -52,3 +52,13 @@ header{
 .btn:hover{
     background: #444;
 }
+.bg-dark{
+    background: black;
+    color :white
+}
+.error{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+}
