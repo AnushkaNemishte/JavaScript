@@ -64,7 +64,7 @@
 
 //TRAVERSING THE DOM
 //parent nodes
-const item_list = document.getElementById('items')
+// const item_list = document.getElementById('items')
 // console.log(item_list.parentNode);
 // item_list.parentNode.style.backgroundColor = "#f4f4f4";
 // console.log(item_list.parentNode.parentNode); 
@@ -75,74 +75,76 @@ const item_list = document.getElementById('items')
 // console.log(item_list.parentNode.parentNode); 
 
 //Childnodes
-console.log(item_list.childNodes);
-console.log(item_list.children);
-item_list.children[1].style.backgroundColor = "yellow"
+// console.log(item_list.childNodes);
+// console.log(item_list.children);
+// item_list.children[1].style.backgroundColor = "yellow"
 
 //firstchild
-console.log(item_list.firstChild);
+// console.log(item_list.firstChild);
 
 //firstElementChild
-console.log(item_list.firstElementChild);
-item_list.firstElementChild.textContent="Hello first Element"
+// console.log(item_list.firstElementChild);
+// item_list.firstElementChild.textContent="Hello first Element"
 
 //last child
-console.log(item_list.lastChild);
+// console.log(item_list.lastChild);
 
 //lastElementChild
-console.log(item_list.lastElementChild);
-item_list.lastElementChild.textContent="Hello last element"
+// console.log(item_list.lastElementChild);
+// item_list.lastElementChild.textContent="Hello last element"
 
 //nextSibling
-console.log(item_list.nextSibling);
+// console.log(item_list.nextSibling);
 //nextElementSibling
-console.log(item_list.nextElementSibling);
+// console.log(item_list.nextElementSibling);
 
-const headers = document.getElementsByClassName('title')
-console.log(headers);
-console.log(headers[1].nextElementSibling);
+// const headers = document.getElementsByClassName('title')
+// console.log(headers);
+// console.log(headers[1].nextElementSibling);
 
 //previousSibling
-console.log(item_list.previousSibling);
+// console.log(item_list.previousSibling);
 //previousElementSibling
-console.log(item_list.previousElementSibling);
-item_list.previousElementSibling.style.color="green"
+// console.log(item_list.previousElementSibling);
+// item_list.previousElementSibling.style.color="green"
 
 //creating dom element from javascript and insert them
 //createElement
-const newDiv = document.createElement('div')
+// const newDiv = document.createElement('div')
 
 //add className 
-newDiv.className="hello"
+// newDiv.className="hello"
 //add id
-newDiv.id="hello"
+// newDiv.id="hello"
 //add attribute
-newDiv.setAttribute('title','hello title')
+// newDiv.setAttribute('title','hello title')
 //create text node
-const newDivText = document.createTextNode('Hii Anushka')
+// const newDivText = document.createTextNode('Hii Anushka')
 //Add text to div
-newDiv.appendChild(newDivText)
-console.log(newDiv);
+// newDiv.appendChild(newDivText)
+// console.log(newDiv);
 //Add div to DOM
 //header madlya container madye before H1
-var addDivDom = document.querySelector('header .container');
-var h1 = document.querySelector('header h1')
-addDivDom.insertBefore(newDiv,h1)
+// var addDivDom = document.querySelector('header .container');
+// var h1 = document.querySelector('header h1')
+// addDivDom.insertBefore(newDiv,h1)
 
 //Events
 //addEventListener
 // const newbtn = document.getElementById('btnn').addEventListener('click',function(){
 //     console.log("clicked btn");
 // })
-const btn = document.getElementById('btnn').addEventListener('click',btnFunction)
+// const btn = document.getElementById('btnn').addEventListener('click',btnFunction)
 
-function btnFunction(e){
+// function btnFunction(e){
     // document.querySelector('#header-title').textContent="Text Changed";
     // document.querySelector('#main').style.backgroundColor="grey";
-    console.log(e);
-    console.log(e.target);
-    console.log(e.target.id);
-    console.log(e.target.className);
+    // console.log(e);
+    // console.log(e.target);
+    // console.log(e.target.id);
+    // console.log(e.target.className);
     //type of event
-    console.log(e.type);
-}
+    // console.log(e.type);
+// }
+
+//Mouse Events
