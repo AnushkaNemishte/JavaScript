@@ -40,23 +40,109 @@
 // hearder1[0].style.background="yellow"
 
 //querySelector
-const header = document.querySelector('#main-header');
+// const header = document.querySelector('#main-header');
 // header.remove()
-header.style.borderBottom = 'solid 5px black '
+// header.style.borderBottom = 'solid 5px black '
 
-const input = document.querySelector('input')
-input.value="item 6"
+// const input = document.querySelector('input')
+// input.value="item 6"
 
-const submit = document.querySelector('input[type=submit]')
-submit.value="Send"
+// const submit = document.querySelector('input[type=submit]')
+// submit.value="Send"
 
 
 //query selector all -grabs more than one thing
-const headers = document.querySelectorAll('.title')
-console.log(headers);
-headers[0].textContent = "JSKFSIWHEFh" 
+// const headers = document.querySelectorAll('.title')
+// console.log(headers);
+// headers[0].textContent = "JSKFSIWHEFh" 
+// headers[1].textContent="hgjkgkhlh"
 
-const odd = document.querySelectorAll('li:nth-child(odd')
-for (var i = 0;i<odd.length ; i++ ){
-    odd[i].style.background = '#f4f4f4'
+// const odd = document.querySelectorAll('li:nth-child(odd')
+// for (var i = 0;i<odd.length ; i++ ){
+//     odd[i].style.background = '#f4f4f4'
+// }
+
+//TRAVERSING THE DOM
+//parent nodes
+const item_list = document.getElementById('items')
+// console.log(item_list.parentNode);
+// item_list.parentNode.style.backgroundColor = "#f4f4f4";
+// console.log(item_list.parentNode.parentNode); 
+
+// parent element - parent nodes and parent elements are both same
+// console.log(item_list.parentNode);
+// item_list.parentNode.style.backgroundColor = "#f4f4f4";
+// console.log(item_list.parentNode.parentNode); 
+
+//Childnodes
+console.log(item_list.childNodes);
+console.log(item_list.children);
+item_list.children[1].style.backgroundColor = "yellow"
+
+//firstchild
+console.log(item_list.firstChild);
+
+//firstElementChild
+console.log(item_list.firstElementChild);
+item_list.firstElementChild.textContent="Hello first Element"
+
+//last child
+console.log(item_list.lastChild);
+
+//lastElementChild
+console.log(item_list.lastElementChild);
+item_list.lastElementChild.textContent="Hello last element"
+
+//nextSibling
+console.log(item_list.nextSibling);
+//nextElementSibling
+console.log(item_list.nextElementSibling);
+
+const headers = document.getElementsByClassName('title')
+console.log(headers);
+console.log(headers[1].nextElementSibling);
+
+//previousSibling
+console.log(item_list.previousSibling);
+//previousElementSibling
+console.log(item_list.previousElementSibling);
+item_list.previousElementSibling.style.color="green"
+
+//creating dom element from javascript and insert them
+//createElement
+const newDiv = document.createElement('div')
+
+//add className 
+newDiv.className="hello"
+//add id
+newDiv.id="hello"
+//add attribute
+newDiv.setAttribute('title','hello title')
+//create text node
+const newDivText = document.createTextNode('Hii Anushka')
+//Add text to div
+newDiv.appendChild(newDivText)
+console.log(newDiv);
+//Add div to DOM
+//header madlya container madye before H1
+var addDivDom = document.querySelector('header .container');
+var h1 = document.querySelector('header h1')
+addDivDom.insertBefore(newDiv,h1)
+
+//Events
+//addEventListener
+// const newbtn = document.getElementById('btnn').addEventListener('click',function(){
+//     console.log("clicked btn");
+// })
+const btn = document.getElementById('btnn').addEventListener('click',btnFunction)
+
+function btnFunction(e){
+    // document.querySelector('#header-title').textContent="Text Changed";
+    // document.querySelector('#main').style.backgroundColor="grey";
+    console.log(e);
+    console.log(e.target);
+    console.log(e.target.id);
+    console.log(e.target.className);
+    //type of event
+    console.log(e.type);
 }
