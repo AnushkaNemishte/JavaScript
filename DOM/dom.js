@@ -148,3 +148,48 @@
 // }
 
 //Mouse Events
+// const button = document.getElementById('btnn');
+// button.addEventListener('click',runEvent)
+// button.addEventListener('mousedown',runEvent)
+// button.addEventListener('mouseover',runEvent)
+// function runEvent (e){
+// console.log('Event Type: ',e.type);
+// }
+
+// const box = document.getElementById('box')
+// box.addEventListener('mouseenter',runEvent)
+
+// function runEvent(){
+//     console.log('mouseEnter');
+// }
+
+//var itemInput = document.querySelector('input[type="text"]')
+// itemInput.addEventListener('keydown',runEvent)
+// itemInput.addEventListener('keyup',runEvent)
+// itemInput.addEventListener('keypress',runEvent)
+// itemInput.addEventListener('focus',runEvent)
+// itemInput.addEventListener('blur',runEvent)
+// itemInput.addEventListener('cut',runEvent)
+// itemInput.addEventListener('paste',runEvent)
+
+// function runEvent(e){
+//      console.log('Event type: ',e.type);
+    //console.log(e.target.value);
+//    const output =  document.getElementsByClassName('output')
+//    output.innerHTML = '<h3>'+ e.target.value +'</h3>'
+// //}
+
+// const form = document.querySelector('form')
+// form.addEventListener('submit',runEvent);
+
+// function runEvent(e){
+//     e.preventDefault()
+//     console.log("Event type",e.type);
+// }
+
+// const select = document.querySelector('select')
+// select.addEventListener('change',runEvent)
+// function runEvent(e){
+//          console.log("Event type",e.type);
+//          console.log(e.target.value);
+//      }
