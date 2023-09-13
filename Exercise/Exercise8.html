@@ -1,0 +1,25 @@
+<!--  Create an HTML page with a button. Write JavaScript code to change the text of a paragraph when the button is clicked. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8</title>
+</head>
+<body>
+    <h1> Create an HTML page with a button. Write JavaScript code to change the text of a paragraph when the button is clicked.</h1>
+    <p id="para">
+        These exercises cover the basics of JavaScript, including variables, data types, control structures, functions, and interaction with the DOM (Document Object Model). You can start with these and gradually move on to more complex challenges as you become more comfortable with JavaScript.
+    </p>
+    <button id="changetext">change paragraph</button>
+    <script>
+       const paragraph = document.getElementById('para');
+       const chgtext = document.getElementById('changetext')
+        chgtext.addEventListener('click',ChangePara)
+        function ChangePara(){
+        paragraph.textContent="This is new paragraph"
+        }
+
+    </script>
+</body>
+</html>
