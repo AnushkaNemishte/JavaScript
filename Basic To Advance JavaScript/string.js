@@ -32,3 +32,17 @@ console.log(lowerCaseName);
 let useSlice = nName.slice(1,3) //start from index one and end on 3 but will not print 3
 console.log(useSlice);
 
+//slice() - start index - it takes all character from 1 to end
+let UseeSlice = nName.slice(1)
+console.log(UseeSlice);
+
+//replace() 
+let fullName = "Deepeka Padukon"
+let newName = fullName.replace('Padukon','Sigh') //write what we have to replace with
+console.log(newName);
+
+//concate()
+let Fname = "Anushka"
+let Lname = "Nemishte"
+let FullName = Fname +" ".concat(Lname)
+console.log(FullName);
